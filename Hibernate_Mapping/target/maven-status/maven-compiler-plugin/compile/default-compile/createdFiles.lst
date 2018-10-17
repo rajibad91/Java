@@ -1,0 +1,4 @@
+com\example\hibernate\test\Hibernate_Mapping\App.class
+com\example\hibernate\data\Book.class
+com\example\hibernate\util\HibernateUtil.class
+com\example\hibernate\data\Author.class
