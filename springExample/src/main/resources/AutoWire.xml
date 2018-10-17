@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean id="beanByName"
+		class="com.example.spring.AutoWire.BeanByName">
+		<property name="name" value="Bean BY Name"></property>
+	</bean>
+	<bean id="beanByType"
+		class="com.example.spring.AutoWire.BeanByType">
+		<property name="type" value="Bean BY Type"></property>
+	</bean>
+	<bean id="beanByConstructor"
+		class="com.example.spring.AutoWire.BeanByConstructor">
+		<property name="construct" value="Bean BY Constructor"></property>
+	</bean>
+	<bean id="bean1" class="com.example.spring.AutoWire.BeanAutoWire"
+		autowire="byName">
+
+	</bean>
+	<bean id="bean2" class="com.example.spring.AutoWire.BeanAutoWire"
+		autowire="byType">
+
+	</bean>
+	<bean id="bean3" class="com.example.spring.AutoWire.BeanAutoWire"
+		autowire="constructor">
+
+	</bean>
+
+</beans>
